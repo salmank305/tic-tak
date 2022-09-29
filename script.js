@@ -1,11 +1,10 @@
 
 let music = new Audio("music.mp3")
-let music2 = new Audio("m2.mp3")
+// let music2 = new Audio("m2.mp3")
 let audioTurn = new Audio("ting.mp3")
-let gameover = new Audio("gameover.mp3")
+// let gameover = new Audio("gameover.mp3")
 let turn = "X"
 let isgameover = false;
-
 // Function to change the turn
 const changeTurn = ()=>{
     return turn === "X"? "O": "X"
@@ -15,8 +14,8 @@ const changeTurn = ()=>{
 const checkWin = ()=>{
     let boxtext = document.getElementsByClassName('boxtext');
     let wins = [
-        [0, 1, 2],
-        [3, 4, 5],
+        [0, 1, 2],     
+        [3, 4, 5], 
         [6, 7, 8],
         [0, 3, 6],
         [1, 4, 7],
